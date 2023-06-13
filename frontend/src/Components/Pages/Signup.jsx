@@ -9,44 +9,44 @@ function Signup() {
       <div class="container">
         <div class="sign-up__container">
           <form id="form" class="form" autocomplete="off">
-            <h2>Regjistrohu</h2>
+            <h2>Sign Up</h2>
             <div class="form-control">
-              <label for="username">Emri i përdoruesit</label>
+              <label for="username">Your Name</label>
               <input
                 type="text"
                 id="username"
-                placeholder="Shëno emrin tuaj të përdoruesit"
+                placeholder="Enter Your Name"
               />
             </div>
             <div class="form-control">
-              <label for="email">Adresa Elektornike</label>
+              <label for="email">Email Address</label>
               <input
                 type="text"
                 id="email"
-                placeholder="Shëno adresën elektronike"
+                placeholder="Enter Email Address"
               />
             </div>
             <div class="form-control">
-              <label for="password">Fjalëkalimi</label>
+              <label for="password">Password</label>
               <input
                 type="password"
                 id="password"
-                placeholder="Shëno fjalëkalimin"
+                placeholder="Enter Password"
               />
             </div>
             <div class="form-control">
-              <label for="password2">Konfirmimi i Fjalëkalimit</label>
+              <label for="password2">Confirm Password</label>
               <input
                 type="password"
                 id="password2"
-                placeholder="Shëno fjalëkalimin përsëri"
+                placeholder="Confirm Password"
               />
             </div>
             <div class="buttons">
-              <Link to = "/" class="cancel-button">Kthehu Mbrapa</Link> 
-              <button type="submit">Regjistrohu</button>
+              <Link to = "/" class="cancel-button">Return</Link> 
+              <button type="submit">Sign Up</button>
             </div>
-            <Link to = "/login">Keni llogari, kycuni</Link>
+            <Link to = "/login">Already have an account! Login here</Link>
           </form>
         </div>
       </div>

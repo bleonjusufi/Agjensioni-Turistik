@@ -9,28 +9,28 @@ function Login() {
       <div class="container">
         <div class="log-in__container">
           <form id="form" class="form" autocomplete="off">
-            <h2>Kycuni</h2>
+            <h2>Login</h2>
             <div class="form-control">
-              <label for="email">Adresa Elektornike</label>
+              <label for="email">Email Address</label>
               <input
                 type="text"
                 id="email"
-                placeholder="Shëno adresën elektronike"
+                placeholder="Enter Email Address"
               />
             </div>
             <div class="form-control">
-              <label for="password">Fjalëkalimi</label>
+              <label for="password">Password</label>
               <input
                 type="password"
                 id="password"
-                placeholder="Shëno fjalëkalimin"
+                placeholder="Enter Password"
               />
             </div>
             <div class="buttons">
-              <Link to = "/" class="cancel-button">Kthehu Mbrapa</Link> 
-              <button type="submit">Regjistrohu</button>
+              <Link to = "/" class="cancel-button">Return</Link> 
+              <button type="submit">Login</button>
             </div>
-            <Link to = "/signup">Deshironi te regjistroheni?</Link>
+            <Link to = "/signup">Create account</Link>
           </form>
         </div>
       </div>
