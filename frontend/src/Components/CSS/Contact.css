@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.send-us__msg{
+    margin-top: 100px;
+    width: 50%;
+    border: thin solid black;
+}
+.contact-msg__title{
+    text-align: center;
+    margin: 0 0 20px;
+}
+input[type="email"] {
+    padding: 12px 23px 12px;
+    font-size: 13px;
+    width: 350px;
+    border: none;
+    background: #f5fafe;
+    border-radius: 6px;
+}
+textarea{
+    padding: 12px 23px 12px;
+    font-size: 13px;
+    width: 350px;
+    border: none;
+    background: #f5fafe;
+    border-radius: 6px;
+}
+.send-btn{
+    padding: 10px 25px;
+    background-color: #ff3131;
+}
