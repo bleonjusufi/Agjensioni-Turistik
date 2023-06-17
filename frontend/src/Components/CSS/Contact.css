@@ -9,6 +9,9 @@
     margin: 0 auto;
     padding: 0 15px;
 }
+.main{
+    margin-top: 150px;
+}
 .row{
     display: flex;
     gap: 40px;

@@ -12,6 +12,7 @@ function Contact() {
         <>
         <Header />
         <div className="container">
+            <div className="main">
             <div className="contact-us">
                 <div className="row">
                     <div className="box-1">
@@ -69,6 +70,7 @@ function Contact() {
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </div>
         </>
