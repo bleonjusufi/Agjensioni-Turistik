@@ -7,11 +7,7 @@ import '../CSS/Home.css';
 function Home() {
     return(
        <>
-        <Header />
-       
-        
-               
-                
+        <Header />   
             
        </>
     )
