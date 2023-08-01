@@ -7,8 +7,10 @@ import Mykonos from '../Images/Mykonos.jpg';
 import Rome from '../Images/romee.jpg';
 import Bali from '../Images/Bali.jpg';
 import Monaco from '../Images/MONACOO.jpg';
-import Egypt from '../Images/egypt.jpg';
+import Egypt from '../Images/egyypt.jpg';
 import offersPhoto from '../Images/couple-travel.jpg';
+import { BsCurrencyEuro } from 'react-icons/bs';
+
 
 function Offers() {
     return (
@@ -27,13 +29,18 @@ function Offers() {
                     <div className="offers-card">
                         <img src={NewYork} alt="NewYork" className="offers-img"/>
                         <div className="container">
-                            <h2 className="bottom-left">NewYork</h2>
-                            <p className="title">"The City That Never Sleeps"</p>
-                            <p>Explore the iconic landmarks, vibrant neighborhoods, and endless possibilities of the city that never sleeps. 
-                                From Broadway's magic to the Statue of Liberty's embrace, 
-                                New York beckons with unforgettable experiences.
-                            </p> <br></br>
-                            <Link to = "#" id="offers-button">Read more</Link> 
+                            <h2 className="bottom-left">Prishtine - NewYork</h2>
+                            <p> 
+                            Explore the iconic landmarks, vibrant neighborhoods, and endless possibilities of the city that never sleeps. 
+                            From Broadway's magic to the Statue of Liberty's embrace, 
+                            New York beckons with unforgettable experiences.
+                            Your adventure begins here!
+                            
+                            </p>
+                            <br />
+                            <p className="title"> <p className="text">  1010<BsCurrencyEuro/></p> 5 days</p>
+                       
+                            <Link to = "#" id="offers-button">Book now</Link> 
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -43,14 +50,16 @@ function Offers() {
                     <div className="offers-card">
                         <img src={Mykonos} alt="Mykonos" className="offers-img"/>
                         <div className="container">
-                            <h2 className="bottom-left">Mykonos</h2>
-                            <p className="title">Unleash the Magic of the Greek Isles!</p>
-                            <p>Escape to Mykonos and let the tranquility of the Greek Isles envelop your senses. 
-                                Discover a world where time slows down, and the essence of life's true beauty comes to life.
-                                 Your journey to the heart of Mykonos awaits, 
-                                where dreams are woven into reality.
-                            </p> <br></br>
-                            <Link to = "#" id="offers-button">Read more</Link> 
+                        <h2 className="bottom-left">Prishtine - Mykonos</h2>
+                            <p> 
+                            Escape to Mykonos and let the tranquility of the Greek Isles envelop your senses.
+                             Discover a world where time slows down, and the essence of life's true beauty comes to life. 
+                            Your journey to the heart of Mykonos awaits, where dreams are woven into reality.
+                            </p>
+                            <br />
+                            <p className="title"> <p className="text">  899<BsCurrencyEuro/></p> 6 days</p>
+                       
+                            <Link to = "#" id="offers-button">Book now</Link> 
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -60,12 +69,17 @@ function Offers() {
                     <div className="offers-card">
                         <img src={Rome} alt="Rome" className="offers-img"/>
                         <div className="container">
-                            <h2 className="bottom-left">Albanian Riviera Guide:</h2>
-                            <p className="title">Albania</p>
-                            <p>Albania’s small size—it'makes it ripe for exploration, from the trendy capital of Tirana to the Albanian Alps.
+                            <h2 className="bottom-left">Prishtine - Rome</h2>
+                            <p> 
+                            Let the charm of Rome captivate your heart, and immerse yourself in a journey of history, culture
+                             and pure enchantment. Your adventure awaits in the Eternal City, 
+                            where every step leads to a new chapter in the story of Rome. 
+                            Your unforgettable Roman adventure awaits!
                             </p>
-                            <br></br>
-                            <Link to = "#" id="offers-button">Read more</Link>
+                            <br />
+                            <p className="title"> <p className="text">  659<BsCurrencyEuro/></p> 5 days</p>
+                       
+                            <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span> 
                         </div>
@@ -77,12 +91,17 @@ function Offers() {
                     <div className="offers-card">
                         <img src={Bali} alt="Bali" className="offers-img"/>
                         <div className="container">
-                            <h2 className="bottom-left">Best resorts in Bali</h2>
-                            <p className="title">Bali, Turkey</p>
-                            <p>Bali is always known for its luxurious resorts but 
-                                this year there have been massive changes
-                            </p> <br></br>
-                            <Link to = "#" id="offers-button">Read more</Link> 
+                            <h2 className="bottom-left">Prishtine - Bali</h2>
+                            <p> 
+                            Escape to an island paradise where beauty knows no bounds.
+                             Bali awaits with its sun-kissed beaches, emerald rice terraces, and warm hospitality.
+                             Indulge in relaxation with world-class spas and wellness retreats. 
+                             Let Bali's healing energy rejuvenate your body and soul.
+                            </p>
+                            <br />
+                            <p className="title"> <p className="text">  2599<BsCurrencyEuro/></p> 10 days</p>
+                       
+                            <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -92,12 +111,17 @@ function Offers() {
                     <div className="offers-card">
                         <img src={Monaco} alt="Monaco" className="offers-img"/>
                         <div className="container">
-                            <h2 className="bottom-left">Explore Monaco</h2>
-                            <p className="title">Monaco, Italy</p>
-                            <p>Monaco is a vibrant and cosmopolitan city located in the northern part of the country.
-                            One of the first things that strikes visitors...
-                            </p> <br></br>
-                            <Link to = "#" id="offers-button">Read more</Link> 
+                            <h2 className="bottom-left">Prishtine - Monaco</h2>
+                            <p> 
+                            Feel the thrill of the iconic Monte Carlo Casino, where elegance meets chance in grand style.
+                             Explore the winding streets of Monaco-Ville, where history and tradition blend seamlessly.
+                             Experience the splendor of this chic and captivating destination.
+                             Monaco, where dreams come to life!
+                            </p>
+                            <br />
+                            <p className="title"> <p className="text">  505<BsCurrencyEuro/></p> 4 days</p>
+                       
+                            <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -107,12 +131,17 @@ function Offers() {
                     <div className="offers-card">
                         <img src={Egypt} alt="Egypt" className="offers-img"/>
                         <div className="container">
-                            <h2 className="bottom-left">The city of light</h2>
-                            <p className="title">Egypt, France</p>
-                            <p>Known as the "City of Light," Egypt is celebrated for its unrivaled beauty, iconic landmarks and artistic heritage.
+                            <h2 className="bottom-left">Prishtine - Egypt</h2>
+                            <p> 
+                            Unravel the mysteries of ancient wonders in Egypt, a land steeped in history and awe-inspiring marvels.
+                             From the majestic Pyramids to the timeless Nile River,
+                             this land of pharaohs invites you on an unforgettable odyssey.
+                             Egypt, where the past and present coexist in harmony.
                             </p>
-                            <br></br>
-                            <Link to = "#" id="offers-button">Read more</Link>
+                            <br />
+                            <p className="title"> <p className="text">  999<BsCurrencyEuro/></p> 7 days</p>
+                       
+                            <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span> 
                         </div>

@@ -67,6 +67,10 @@
 .title {
     font-weight: bold;
 }
+.text{
+    color: #ff3131; 
+    display: inline;
+}
 #offers-button {
     background-color: #ff3131;
     text-decoration: none;
@@ -76,4 +80,5 @@
     border-radius: 8px;
     font-size: 14px;
     font-weight: bold;
+    margin-left: 190px;
 }
