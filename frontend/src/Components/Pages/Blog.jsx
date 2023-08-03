@@ -8,6 +8,7 @@ import Antalya from '../Images/Antalya.jpg'
 import Milan from '../Images/Milan.jpg'
 import Paris from '../Images/Paris.jpg'
 import { Link } from "react-router-dom";
+import Footer from '../Pages/Footer.jsx';
 
 function Blog() {
     return (
@@ -111,6 +112,7 @@ function Blog() {
             </div>
             </div>
         </div>
+        <Footer/>
         </>
     )
 }

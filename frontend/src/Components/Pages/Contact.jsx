@@ -6,6 +6,7 @@ import {FaHome} from 'react-icons/fa';
 import {FaPhone} from 'react-icons/fa';
 import {FaEnvelope} from 'react-icons/fa';
 import {FaGlobe} from 'react-icons/fa';
+import Footer from '../Pages/Footer.jsx';
 
 function Contact() {
     return (
@@ -73,6 +74,7 @@ function Contact() {
             </div>
             </div>
         </div>
+        <Footer/>
         </>
     )
 }
