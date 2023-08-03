@@ -4,7 +4,6 @@ import {Link} from 'react-router-dom';
 import { BsInstagram } from 'react-icons/bs';
 import { BsFacebook } from 'react-icons/bs';
 import { BsTwitter } from 'react-icons/bs';
-import Airoplani from '../Images/transparent.png';
 
 function Footer() {
 
