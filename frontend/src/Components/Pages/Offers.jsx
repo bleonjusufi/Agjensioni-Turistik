@@ -10,6 +10,7 @@ import Monaco from '../Images/MONACOO.jpg';
 import Egypt from '../Images/egyypt.jpg';
 import offersPhoto from '../Images/couple-travel.jpg';
 import { BsCurrencyEuro } from 'react-icons/bs';
+import Footer from '../Pages/Footer.jsx';
 
 
 function Offers() {
@@ -151,6 +152,7 @@ function Offers() {
             </div>
         </div>
         </div>
+        <Footer/>
      </>
 
         
