@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.nyc{
+  width: 100%;
+}
+.ny{
+  width: 5%;
+  margin-top: -28px;
+  border: 2px solid #ff3131;
+  margin-left: 390px;
+}
+.ny-header{
+  text-align: start;
+  margin-top: 60px;
+  margin-left: 110px;
+}
+.HiLocationMarker{
+  border: 1px solid black;
+  border-radius: 100%;
+  padding: 3px;
+  font-size: 35px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row2{
+  background-color: rgb(226, 225, 225);
+  width: 80%;
+   margin-left: 145px;
+   margin-top: 25px;
+}
