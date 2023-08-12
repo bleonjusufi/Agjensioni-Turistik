@@ -111,8 +111,9 @@ function NewYork() {
                         <br />
                         <div className="contact">
                         <BsFillTelephoneFill className="Fill fill2"/>  <HiOutlineMail className="Fill "/> <MdContactPage className="Fill"/>
-                        <h3>Phone Email Contact Us</h3>
-                        <p>+383 49 488 909      prishtina-info@gmail.com</p>
+                        <h3 className="h3-info">Phone </h3>
+                        <h3 className="h3-info">Email </h3>
+                        <h3 className="h3-info"> Contact Us</h3>
                         </div>
                   </div>
                 </div>

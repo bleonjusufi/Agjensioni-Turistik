@@ -162,7 +162,7 @@
 }
 .Fill{
   font-size: 35px;
-  margin: 12px  50px;
+  margin: 12px  48px;
 }
 .Fill:hover{
   text-shadow: #c40202;
@@ -172,4 +172,11 @@
 }
 .fill2{
   font-size: 28px;
+}
+.h3-info{
+  display: inline;
+  margin: 10px 36px;
+}
+.pg{
+  display: inline;
 }

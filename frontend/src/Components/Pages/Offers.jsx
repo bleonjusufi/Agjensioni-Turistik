@@ -28,9 +28,9 @@ function Offers() {
             <div className="row">
                 <div className="offers-column">
                     <div className="offers-card">
-                        <img src={NewYork} alt="NewYork" className="offers-img"/>
+                        <Link to = "/NewYork"> <img src={NewYork} alt="NewYork" className="offers-img"/></Link> 
                         <div className="container">
-                            <h2 className="bottom-left">Prishtine - NewYork</h2>
+                            <Link to = "/NewYork"><h2 className="bottom-left linkClass">Prishtine - NewYork</h2></Link>
                             <p> 
                             Explore the iconic landmarks, vibrant neighborhoods, and endless possibilities of the city that never sleeps. 
                             From Broadway's magic to the Statue of Liberty's embrace, 
@@ -39,7 +39,7 @@ function Offers() {
                             
                             </p>
                             <br />
-                            <p className="title"> <p className="text">  1010<BsCurrencyEuro/></p> 5 days</p>
+                            <p className="title">1010<BsCurrencyEuro/> 5 days</p>
                        
                             <Link to = "#" id="offers-button">Book now</Link> 
                             <br></br>
@@ -58,7 +58,7 @@ function Offers() {
                             Your journey to the heart of Mykonos awaits, where dreams are woven into reality.
                             </p>
                             <br />
-                            <p className="title"> <p className="text">  899<BsCurrencyEuro/></p> 6 days</p>
+                            <p className="title">899<BsCurrencyEuro/>  6 days</p>
                        
                             <Link to = "#" id="offers-button">Book now</Link> 
                             <br></br>
@@ -78,7 +78,7 @@ function Offers() {
                             Your unforgettable Roman adventure awaits!
                             </p>
                             <br />
-                            <p className="title"> <p className="text">  659<BsCurrencyEuro/></p> 5 days</p>
+                            <p className="title">659<BsCurrencyEuro/>  5 days</p>
                        
                             <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>
@@ -100,7 +100,7 @@ function Offers() {
                              Let Bali's healing energy rejuvenate your body and soul.
                             </p>
                             <br />
-                            <p className="title"> <p className="text">  2599<BsCurrencyEuro/></p> 10 days</p>
+                            <p className="title">2599<BsCurrencyEuro/> 10 days</p>
                        
                             <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>
@@ -120,7 +120,7 @@ function Offers() {
                              Monaco, where dreams come to life!
                             </p>
                             <br />
-                            <p className="title"> <p className="text">  505<BsCurrencyEuro/></p> 4 days</p>
+                            <p className="title">505<BsCurrencyEuro/> 4 days</p>
                        
                             <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>
@@ -140,7 +140,7 @@ function Offers() {
                              Egypt, where the past and present coexist in harmony.
                             </p>
                             <br />
-                            <p className="title"> <p className="text">  999<BsCurrencyEuro/></p> 7 days</p>
+                            <p className="title">999<BsCurrencyEuro/> 7 days</p>
                        
                             <Link to = "#" id="offers-button">Book now</Link>
                             <br></br>

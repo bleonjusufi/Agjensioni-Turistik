@@ -67,10 +67,7 @@
 .title {
     font-weight: bold;
 }
-.text{
-    color: #ff3131; 
-    display: inline;
-}
+
 #offers-button {
     background-color: #ff3131;
     text-decoration: none;
@@ -85,3 +82,6 @@
 #offers-button:hover{
     background-color: #c40202;
 } 
+.linkClass{
+    color: black;
+}
