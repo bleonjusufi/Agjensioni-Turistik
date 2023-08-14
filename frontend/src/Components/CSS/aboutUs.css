@@ -18,3 +18,27 @@
     border: 2px solid #ff3131;
     margin-left: 220px;
 }
+.column3 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; 
+  }
+  
+  /* Clear floats after the columns */
+  .row3:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .row3{
+    width: 80%;
+    margin-left: 165px;
+    padding-bottom: 150px;
+  }
+  .agent{
+    width: 78%;
+    border-top-right-radius: 50px 50px;
+    border-bottom-left-radius: 50px 50px;
+    margin-left: 100px;
+  }
