@@ -77,7 +77,6 @@ function NewYork() {
                 >
                   <div className="numbertext">{index + 1} / {images.length}</div>
                   <img src={image} alt={`Slide ${index + 1}`} style={{ width: '100%' }} />
-                  <div className="text">Caption Text</div>
                 </div>
               ))}
               <a className="prev" onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length)}>&#10094;</a>

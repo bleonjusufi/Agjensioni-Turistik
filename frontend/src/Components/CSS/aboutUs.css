@@ -15,14 +15,18 @@
 .aboutus{
     width: 5%;
     margin-top: -28px;
+    margin-bottom: 45px;
     border: 2px solid #ff3131;
-    margin-left: 220px;
+    margin-left: 550px;
 }
 .column3 {
     float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px; 
+    width: 28%;
+    padding: 60px;
+    height: 590px; 
+    border: 1px solid #ff3131 ;
+    text-align: center;
+    margin-left: 40px;
   }
   
   /* Clear floats after the columns */
@@ -37,8 +41,56 @@
     padding-bottom: 150px;
   }
   .agent{
-    width: 78%;
+    width: 70%;
     border-top-right-radius: 50px 50px;
     border-bottom-left-radius: 50px 50px;
     margin-left: 100px;
+  }
+  .general-info{
+    width: 80%;
+    margin: auto;
+  }
+  .questions{
+    text-align: start;
+  }
+  .qu{
+    margin-top: 25px;
+  }
+  .hr3{
+    width: 5%;
+    margin-top: -28px;
+    margin-bottom: 45px;
+    border: 2px solid #ff3131;
+    margin-left: 770px;
+  }
+  .values{
+    background-color: beige;
+    margin-top: 60px;
+  }
+  .values-header{
+    padding-top: 60px;
+}
+.icons{
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+.value-text{
+    margin-top: 20px;
+    padding: 10px;
+}
+.money{
+    color: rgb(220, 101, 57);
+}
+.airplane{
+    color: rgb(220, 101, 57);
+}
+.ending{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    margin-bottom: -100px;
+}
+.ending h2 {
+    margin-right: 50px;  
+    margin-left: 450px;
   }

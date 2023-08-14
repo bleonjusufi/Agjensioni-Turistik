@@ -1,8 +1,12 @@
 import React from "react";
 import Header from "./Header";
 import aboutUs from '../Images/aboutus3.jpg';
-import about from '../Images/about.jpg';
+import { SiYourtraveldottv } from 'react-icons/si';
+import { TbZoomMoney } from 'react-icons/tb';
+import { FcServices } from 'react-icons/fc';
 import '../CSS/aboutUs.css';
+import { Link } from "react-router-dom";
+import Footer from '../Pages/Footer.jsx';
 
 function About() {
     return (
@@ -15,33 +19,85 @@ function About() {
           </div>
   
           <div className="travel-offer">
-            <h2 className="aboutUs-text">About Us</h2>
+            <h2 className="aboutUs-text">Prishtina Tour & Travel | Travel Agency</h2>
             <hr className="aboutus"/>
             </div>
 
-            <div className="about-info row3">
-                <div className="column3">
-                
-                    <p>
-                      As a new company in the market and the Tours Operation, 
-                      PRISHTINA TOUR & TRAVEL is focused on providing services to the highest levels. 
-                      Focusing on the maximum quality of service, professional staff, 
-                      colossal investments that have been with a great goal to become the number one tour operator, 
-                      Prishtina Tour & Travel in 2014 soon moved into the elite top transport companies and tourism in Albania. 
-                      Our company allows you to touch any part of the land unexplored Albanian archaeological sites,
-                      the Albanian Alps, castles, monuments of the great historical importance and any other place that you dreamed. 
-                      Prishtina Tour & Travel 2014 offers all these services with the best means of transportation, the latest technology which offers convenience, 
-                      comfort and fun. VIP transport for everyone that wants wireless connection, comfortable seats and a travel experience that you’ve 
-                      never experienced. Transporting clients is supported not only within Albanian territory but in every European country and our service
-                      wherever required. A qualified staff expects to serve 24/7 7 to make your vacations a great experience, 
-                      trips to any place that you have dreamed
-                    </p>
-                </div>
-                <div className="column3">
-                  <img src={about} alt="about" className="agent"/>
-                </div>
+            <div className="general-info">
+                <h2 className="questions">Why us?</h2>
+                <p>
+                Your Gateway to Extraordinary Adventures. Our team's deep-rooted love for exploration,
+                 seamless planning, and personalized touch ensures that every journey becomes an unforgettable tale. 
+                 Immerse yourself in authentic experiences, traverse hidden gems, and forge lasting connections. 
+                 Join us in embracing the world's wonders, one remarkable destination at a time. 
+                Your adventure begins with Prishtina Tour & Travel – where every moment is a passport to the extraordinary
+                </p>
+
+                <h2 className="questions qu">What makes us different?</h2>
+                <p>
+                At Prishtina Tour & Travel, we don't just plan trips; we design transformative experiences. 
+                Our unwavering commitment to personalized service, off-the-beaten-path exploration, and a deep understanding of diverse cultures sets us apart.
+                 We go beyond the ordinary to curate journeys that linger in your heart and mind, creating a symphony of moments that are uniquely yours.
+                </p>
+
+                <h2 className="questions qu">How do we measure success?</h2>
+                <p>
+                At Prishtina Tour & Travel, success is measured not merely by miles traveled, but by the smiles inspired.
+                We gauge our achievements through the lasting connections we forge, the authentic cultural experiences we provide,
+                and the unforgettable memories we create for each traveler. 
+                Our true triumph lies in knowing that we've ignited a sense of wonder, broadened horizons, and left a positive impact on the destinations we explore. 
+                It's when our clients return home with hearts full of cherished moments that we consider our mission accomplished.
+                </p>
             </div>
+
+            <div className="values">
+              <h2 className="values-header">Our Values</h2>
+              <hr className="hr3" />
+              <div className="row3">
+                <div className="column3">
+                <SiYourtraveldottv className="icons airplane"/>
+                <h3>Best Tours</h3>
+                <p className="value-text">
+                Our Best Tours Await. 
+                We take immense pride in crafting journeys that redefine exploration.
+                With meticulous planning and a passion for perfection,
+                we offer nothing less than the best.
+                Join us and discover the world through a lens of unparalleled experiences.
+                </p>
+                </div>
+
+                <div className="column3">
+                <FcServices className="icons"/>
+                <h3>Best Service</h3>
+                <p className="value-text">
+                   At every step, we are committed to providing you with the very best service, 
+                   meticulously curated to cater to your every need.
+                   From personalized itineraries that reflect your unique preferences to seamless 
+                   logistics that ensure a stress-free adventure, we redefine the meaning of exceptional travel. 
+                </p>
+                </div>
+
+                <div className="column3">
+                <TbZoomMoney className="icons money"/>
+                <h3>Best Prices</h3>
+                <p className="value-text">
+                  We believe that exceptional travel should be accessible to all.
+                  Our traveling agency offers you a range of unbeatable prices without compromising on quality.
+                  Whether you're seeking luxury or budget-friendly options, we ensure that every dollar you invest
+                  in your journey is met with unmatched experiences. 
+                </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="ending">
+              <h2>Explore our offers now!</h2>
+              <Link to = "/offers" ><button className="book more">Offers Here</button></Link>
+        
+            </div>
+
          </div>
+         <Footer />
      </>
     );
 }
