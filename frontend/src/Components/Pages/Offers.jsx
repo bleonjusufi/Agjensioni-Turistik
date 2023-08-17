@@ -11,7 +11,7 @@ import Egypt from '../Images/egyypt.jpg';
 import offersPhoto from '../Images/couple-travel.jpg';
 import { BsCurrencyEuro } from 'react-icons/bs';
 import Footer from '../Pages/Footer.jsx';
-
+import BookingForm from './bookingForm';
 
 function Offers() {
     return (
@@ -41,7 +41,7 @@ function Offers() {
                             <br />
                             <p className="title">1010<BsCurrencyEuro/> 5 days</p>
                        
-                            <Link to = "#" id="offers-button">Book now</Link> 
+                            <Link to = "/bookingForm" id="offers-button">Book now</Link> 
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -60,7 +60,7 @@ function Offers() {
                             <br />
                             <p className="title">899<BsCurrencyEuro/>  6 days</p>
                        
-                            <Link to = "#" id="offers-button">Book now</Link> 
+                            <Link to = "/bookingForm" id="offers-button">Book now</Link> 
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -80,7 +80,7 @@ function Offers() {
                             <br />
                             <p className="title">659<BsCurrencyEuro/>  5 days</p>
                        
-                            <Link to = "#" id="offers-button">Book now</Link>
+                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span> 
                         </div>
@@ -102,7 +102,7 @@ function Offers() {
                             <br />
                             <p className="title">2599<BsCurrencyEuro/> 10 days</p>
                        
-                            <Link to = "#" id="offers-button">Book now</Link>
+                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -122,7 +122,7 @@ function Offers() {
                             <br />
                             <p className="title">505<BsCurrencyEuro/> 4 days</p>
                        
-                            <Link to = "#" id="offers-button">Book now</Link>
+                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span>
                         </div>
@@ -142,7 +142,7 @@ function Offers() {
                             <br />
                             <p className="title">999<BsCurrencyEuro/> 7 days</p>
                        
-                            <Link to = "#" id="offers-button">Book now</Link>
+                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
                             <br></br>
                             <span><br></br></span> 
                         </div>
