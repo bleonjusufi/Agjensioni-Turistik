@@ -9,6 +9,7 @@ import Signup from './Components/Pages/Signup'
 import Login from './Components/Pages/Login'
 import NewYork from './Components/Pages/NewYork'
 import BookingForm from './Components/Pages/bookingForm'
+import Mykonos from './Components/Pages/Mykonos'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path='/NewYork' element = {<NewYork />} />
           <Route path='/login' element = {<Login />} / >
           <Route path='/bookingForm' element = {<BookingForm />} />
+          <Route path='/Mykonos' element = {<Mykonos />} />
         </Routes>
       </Router>
     </>

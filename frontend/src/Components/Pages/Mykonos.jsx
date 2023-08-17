@@ -1,7 +1,7 @@
 import React from "react";
 import Header from './Header';
 import { HiLocationMarker } from 'react-icons/hi';
-import NewYorkk from '../Images/nyc.jpg';
+import Mykonoss from '../Images/my.jpg';
 import Footer from '../Pages/Footer.jsx';
 import '../CSS/NewYork.css';
 import ny1 from '../Images/ny1.jpg';
@@ -16,7 +16,7 @@ import { MdContactPage } from 'react-icons/md';
 
 
 
-function NewYork() {
+function Mykonos() {
   const images = [
     ny1,
     ny2,
@@ -38,33 +38,34 @@ function NewYork() {
       <Header />
       <div className="wrap">
         <div className="head">
-          <img src={NewYorkk} alt="NewYork" className="nyc"/>
-          <h1 className="offers-text">Prishtine - New York</h1>
+          <img src={Mykonoss} alt="NewYork" className="nyc"/>
+          <h1 className="offers-text">Prishtine - Mykonos</h1>
         </div>
 
         <div className="travel-offer">
-          <h2 className="ny-header">Prishtine - New York City</h2>
+          <h2 className="ny-header">Prishtine - Mykonos</h2>
           <hr className="ny"/>
         
           <div className="row2">
             <div className="textDiv column2">
-              <h3 className="h3-header"><HiLocationMarker className="HiLocationMarker"/> Prishtine - New York City</h3>
+              <h3 className="h3-header"><HiLocationMarker className="HiLocationMarker"/> Prishtine - Mykonos</h3>
               <br />
               <p className="paragraph-nyc">
-                Welcome to our agency, your gateway to an unforgettable New York City experience! Embark on a journey with us that promises to immerse you in the vibrant energy, 
-                iconic landmarks, and cultural diversity that define the heart of the Big Apple.
-                When you choose to explore New York City with our agency, you're choosing a curated adventure that goes beyond the ordinary. 
-                Our expertly crafted itineraries ensure you won't miss a single moment of the city's magic, 
-                from the towering marvels of Times Square to the serene beauty of Central Park.
-                Our team of seasoned travel professionals is dedicated to making your visit seamless and extraordinary. 
-                Discover hidden gems tucked away in diverse neighborhoods, savor the culinary delights that span the globe, and witness world-class entertainment
-                that only New York City can offer. <br /> 
-                Departure 07:30 <br />
-                In Summer every Monday, <br />
+              Welcome to our agency, your gateway to an unforgettable Mykonos experience!
+               Embark on a journey with us that promises to immerse you in the vibrant energy, picturesque landscapes,
+               and cultural richness that define the heart of this Greek paradise.
+               When you choose to explore Mykonos with our agency, you're choosing a tailored adventure that 
+               goes beyond the ordinary. Our meticulously designed itineraries ensure you won't miss 
+               a single moment of the island's charm, from the stunning beaches and charming villages to the captivating sunsets
+               over the Aegean Sea. Our team of experienced travel professionals is dedicated to making your visit seamless and extraordinary.
+               Discover hidden gems nestled in charming alleyways, indulge in authentic Greek cuisine that tantalizes your taste buds, and experience
+               the warmth of Greek hospitality that makes Mykonos truly special. <br />
+                Departure 08:00 <br />
+                In Summer every Friday, <br />
                 Winter once a month, <br />
-                New York - Prishtine <br />
-                Once a month, <br />
-                Price round 1010<BsCurrencyEuro/>
+                Mykonos - Prishtine <br />
+                Once a week, <br />
+                Price round 900<BsCurrencyEuro/>
 
 
               </p>
@@ -124,4 +125,4 @@ function NewYork() {
   );
 }
 
-export default NewYork;
+export default Mykonos;
