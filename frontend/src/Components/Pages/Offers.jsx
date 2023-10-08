@@ -49,9 +49,9 @@ function Offers() {
                 </div>
                 <div className="offers-column">
                     <div className="offers-card">
-                        <img src={Mykonos} alt="Mykonos" className="offers-img"/>
+                    <Link to = "/Mykonos"> <img src={Mykonos} alt="Mykonos" className="offers-img"/></Link>
                         <div className="container">
-                        <h2 className="bottom-left">Prishtine - Mykonos</h2>
+                        <Link to = "/Mykonos"><h2 className="bottom-left linkClass">Prishtine - Mykonos</h2></Link>
                             <p> 
                             Escape to Mykonos and let the tranquility of the Greek Isles envelop your senses.
                              Discover a world where time slows down, and the essence of life's true beauty comes to life. 

@@ -3,7 +3,7 @@ import Header from './Header';
 import { HiLocationMarker } from 'react-icons/hi';
 import Mykonoss from '../Images/my.jpg';
 import Footer from '../Pages/Footer.jsx';
-import '../CSS/NewYork.css';
+import '../CSS/mykonos.css';
 import ny1 from '../Images/ny1.jpg';
 import ny2 from '../Images/ny2.jpg';
 import ny4 from '../Images/ny4jpg.jpg';
@@ -44,7 +44,7 @@ function Mykonos() {
 
         <div className="travel-offer">
           <h2 className="ny-header">Prishtine - Mykonos</h2>
-          <hr className="ny"/>
+          <hr className="ny mykonos"/>
         
           <div className="row2">
             <div className="textDiv column2">
