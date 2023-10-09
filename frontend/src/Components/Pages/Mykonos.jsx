@@ -4,9 +4,9 @@ import { HiLocationMarker } from 'react-icons/hi';
 import Mykonoss from '../Images/my.jpg';
 import Footer from '../Pages/Footer.jsx';
 import '../CSS/mykonos.css';
-import ny1 from '../Images/ny1.jpg';
-import ny2 from '../Images/ny2.jpg';
-import ny4 from '../Images/ny4jpg.jpg';
+import my1 from '../Images/mykonosslider4.jpg';
+import my2 from '../Images/mykonosslider2.jpg';
+import my4 from '../Images/mykonosslider3.jpg';
 import { BsCurrencyEuro } from 'react-icons/bs';
 import { Link } from "react-router-dom";
 import logo from '../Images/logo.png';
@@ -18,9 +18,9 @@ import { MdContactPage } from 'react-icons/md';
 
 function Mykonos() {
   const images = [
-    ny1,
-    ny2,
-    ny4
+    my1,
+    my2,
+    my4
   ];
 
   const [currentIndex, setCurrentIndex] = React.useState(0);
