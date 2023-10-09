@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.picture{
+    margin-top: 50px;
+}
+.text3{
+    color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.tours-div{
+    background: linear-gradient(90deg, beige, rgb(183, 175, 175));
+}
+.home-header{
+    margin-left: 100px;
+    padding-top: 50px;
+}
+.home-header3{
+    color: #890303;
+    margin-left: 120px;
+    margin-bottom: -70px;
+}
+.row-conntainer{
+    margin: 0 105px;
+}
