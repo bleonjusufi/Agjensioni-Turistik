@@ -12,7 +12,7 @@ import { FaCity } from 'react-icons/fa';
 import { BsSunglasses } from 'react-icons/bs';
 import { BsStars } from 'react-icons/bs';
 import Man from '../Images/likeman.jpg';
-
+import Footer from '../Pages/Footer.jsx';
 
 
 function Home() {
@@ -128,9 +128,12 @@ function Home() {
                     </div>
                 </div>
 
+
+                
+
                 </div>
         </div>
-            
+        <Footer/>  
        </>
     )
 }
