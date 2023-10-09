@@ -81,7 +81,7 @@ function Home() {
                             Let the charm of Rome captivate your heart, and immerse yourself in a journey of history, culture
                              and pure enchantment. Your adventure awaits in the Eternal City, 
                             where every step leads to a new chapter in the story of Rome. 
-                            Your unforgettable Roman adventure awaits!
+                            
                             </p>
                             <br />
                             <p className="title">659<BsCurrencyEuro/>  5 days</p>
