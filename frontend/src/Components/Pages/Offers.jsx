@@ -68,9 +68,9 @@ function Offers() {
                 </div>
                 <div className="offers-column">
                     <div className="offers-card">
-                        <img src={Rome} alt="Rome" className="offers-img"/>
+                    <Link to = "/Rome"> <img src={Rome} alt="Rome" className="offers-img"/></Link>
                         <div className="container">
-                            <h2 className="bottom-left">Prishtine - Rome</h2>
+                        <Link to = "/Rome"><h2 className="bottom-left linkClass">Prishtine - Rome</h2></Link>
                             <p> 
                             Let the charm of Rome captivate your heart, and immerse yourself in a journey of history, culture
                              and pure enchantment. Your adventure awaits in the Eternal City, 

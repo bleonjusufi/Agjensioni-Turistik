@@ -10,6 +10,7 @@ import Login from './Components/Pages/Login'
 import NewYork from './Components/Pages/NewYork'
 import BookingForm from './Components/Pages/bookingForm'
 import Mykonos from './Components/Pages/Mykonos'
+import Rome from './Components/Pages/Rome'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
           <Route path='/login' element = {<Login />} / >
           <Route path='/bookingForm' element = {<BookingForm />} />
           <Route path='/Mykonos' element = {<Mykonos />} />
+          <Route path='/Rome' element = {<Rome />} />
         </Routes>
       </Router>
     </>
