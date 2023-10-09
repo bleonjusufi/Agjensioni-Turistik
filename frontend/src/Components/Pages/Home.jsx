@@ -2,13 +2,17 @@ import React from "react";
 import Header from "./Header";
 import '../CSS/Home.css';
 import { Link } from "react-router-dom";
-import Footer from '../Pages/Footer.jsx';
 import HomePhoto from '../Images/homePhoto.jpg';
 import NewYork from '../Images/newyorkk.jpg';
 import Mykonos from '../Images/Mykonos.jpg';
 import Rome from '../Images/romee.jpg';
 import { BsCurrencyEuro } from 'react-icons/bs';
 import { BsFillTicketDetailedFill } from 'react-icons/bs';
+import { FaCity } from 'react-icons/fa';
+import { BsSunglasses } from 'react-icons/bs';
+import { BsStars } from 'react-icons/bs';
+import Man from '../Images/likeman.jpg';
+
 
 
 function Home() {
@@ -94,16 +98,34 @@ function Home() {
 
             <div className="home-values">
                 <h1 className="home-header">We Are Prishtina Tour & Travel</h1>
-                <h3 className="home-header3">* TRAVEL AGENCY IN PRISHTINA* </h3>
+                <h3 className="home-header3 travelH3">* TRAVEL AGENCY IN PRISHTINA* </h3>
 
-                <div class="row">
+                <div class="row rowContainer">
                     <div class="column">
-                        <BsFillTicketDetailedFill/>
+                        <BsFillTicketDetailedFill className="BsFill"/>
                         <h3>We offer daily tickets</h3>
-                        <p>Register to our site and get notified for every tour</p>
+                        <p>Register to our site and get <br/>
+                             notified for every tour</p>
+                        <br/>
+                        <FaCity className="BsFill"/>
+                        <h3>+120 Premium City Tour</h3>
+                        <p> Our professional staff travel <br/>
+                            all around the world</p>
                     </div>
-                    <div class="column"></div>
-                    <div class="column"></div>
+                    <div class="column">
+                        <BsSunglasses className="BsFill"/>
+                        <h3>Accessibility Manager</h3>
+                        <p>Whenever you will go,<br/>
+                         a guide guy will be with the group</p>
+                        <br/>
+                        <BsStars className="BsFill"/>
+                        <h3>5 Stars Acommodation</h3>
+                        <p> For our customers, <br/>
+                            we offer always the best</p>
+                    </div>
+                    <div class="column">
+                        <img src={Man} alt="likeMan" className="likeman" />
+                    </div>
                 </div>
 
                 </div>
