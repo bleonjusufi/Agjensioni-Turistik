@@ -20,6 +20,7 @@ import Avatar2 from '../Images/avatar2.jpg';
 import Avatar3 from '../Images/avatar3.jpg';
 
 
+
 function Home() {
     return(
        <>
