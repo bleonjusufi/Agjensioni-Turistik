@@ -55,4 +55,40 @@
 .likeman{
     width: 550px;
 }
+.cards-container{
+    background-image: url(../Images/mountain2.jpg);
+    padding-bottom: 40px;
+}
+.slider-container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 
+  .card {
+    background-color: rgb(214, 214, 190);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    text-align: center;
+    margin: 0 10px;
+
+  }
+  
+  .card img {
+    border-radius: 50%; /* Makes the image round */
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+.endingPoint{
+    background-color: lightgray;
+    margin-bottom: -150px;
+}
+.end{
+    text-align: start;
+}
+.endP{
+    padding-bottom: 30px;
+}

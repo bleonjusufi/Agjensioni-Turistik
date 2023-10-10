@@ -13,6 +13,11 @@ import { BsSunglasses } from 'react-icons/bs';
 import { BsStars } from 'react-icons/bs';
 import Man from '../Images/likeman.jpg';
 import Footer from '../Pages/Footer.jsx';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Avatar1 from '../Images/avatar1.jpg';
+import Avatar2 from '../Images/avatar2.jpg';
+import Avatar3 from '../Images/avatar3.jpg';
 
 
 function Home() {
@@ -127,11 +132,61 @@ function Home() {
                         <img src={Man} alt="likeMan" className="likeman" />
                     </div>
                 </div>
-
-
-                
-
                 </div>
+
+
+              <div className="cards-container">
+                <h1 className="home-header">HAPPY TRAVELER</h1>
+                <h3 className="home-header3 travelH3">* Relax & Enjoy* </h3>
+                
+                <div className="slider-container">
+                    <Carousel
+                        showArrows={true}  // Enable arrow navigation
+                        infiniteLoop={true}
+                        showStatus={false}
+                        showThumbs={false}
+                    >
+                        <div className="card">
+                        <img src={Avatar1} alt="Card 1" />
+                        <h4>John Smith</h4>
+                        <p>From start to finish, my experience with Prishtina Tour&Travel 
+                            has been nothing short of exceptional. 
+                            This journey has left me in awe,
+                             and I couldn't be more grateful for 
+                             the unforgettable memories I've made.
+                             I highly recommend their services to anyone seeking a hassle-free,
+                             unforgettable adventure. </p> 
+                        </div>
+                        <div className="card">
+                        <img src={Avatar2} alt="Card 2" />
+                        <h4>Taylor Rose</h4>
+                        <p>Celebrating my journey with Prishtina Tour&Travel is a must.
+                            Their commitment to crafting exceptional experiences from
+                             start to finish is truly remarkable.
+                              From the moment I engaged with them,
+                               it was evident that every detail was 
+                               meticulously planned and expertly executed. 
+                        </p>
+                        </div>
+                        <div className="card">
+                        <img src={Avatar3} alt="Card 3" />
+                        <h4>Sandra Parc</h4>
+                        <p>From the initial contact, it was clear that Prishtina Tour&Travel 
+                            takes meticulous care in curating unforgettable experiences. 
+                            Their attention to detail and commitment to customer satisfaction have
+                             set a high standard. Even when unexpected situations arose,
+                             their professionalism and dedication shone through.</p>
+                        </div>
+                    </Carousel>
+                 </div>
+              </div>
+
+              <div className="endingPoint">
+                <h2 className="home-header end">Subscribe to get last offers from us</h2>
+                <p className="home-header3 endP">-Get notifications for your travel plans by travel experts!- </p>
+                
+              </div>
+              
         </div>
         <Footer/>  
        </>
