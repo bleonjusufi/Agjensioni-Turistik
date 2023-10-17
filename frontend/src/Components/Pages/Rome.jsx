@@ -1,12 +1,12 @@
 import React from "react";
 import Header from './Header';
 import { HiLocationMarker } from 'react-icons/hi';
-import NewYorkk from '../Images/nyc.jpg';
+import Romee from '../Images/Sunset-Rome.jpg';
 import Footer from '../Pages/Footer.jsx';
-import '../CSS/NewYork.css';
-import ny1 from '../Images/ny1.jpg';
-import ny2 from '../Images/ny2.jpg';
-import ny4 from '../Images/ny4jpg.jpg';
+import '../CSS/mykonos.css';
+import rome1 from '../Images/romewallpaper.jpg';
+import rome2 from '../Images/romeslider.jpg';
+import rome4 from '../Images/romeslider3.jpg';
 import { BsCurrencyEuro } from 'react-icons/bs';
 import { Link } from "react-router-dom";
 import logo from '../Images/logo.png';
@@ -16,11 +16,11 @@ import { MdContactPage } from 'react-icons/md';
 
 
 
-function NewYork() {
+function Rome() {
   const images = [
-    ny1,
-    ny2,
-    ny4
+    rome1,
+    rome2,
+    rome4
   ];
 
   const [currentIndex, setCurrentIndex] = React.useState(0);
@@ -38,33 +38,33 @@ function NewYork() {
       <Header />
       <div className="wrap">
         <div className="head">
-          <img src={NewYorkk} alt="NewYork" className="nyc"/>
-          <h1 className="offers-text">Prishtine - New York</h1>
+          <img src={Romee} alt="NewYork" className="nyc"/>
+          <h1 className="offers-text">Prishtine - Rome</h1>
         </div>
 
         <div className="travel-offer">
-          <h2 className="ny-header">Prishtine - New York City</h2>
-          <hr className="ny"/>
+          <h2 className="ny-header">Prishtine- Rome,Itali</h2>
+          <hr className="ny mykonos"/>
         
           <div className="row2">
             <div className="textDiv column2">
-              <h3 className="h3-header"><HiLocationMarker className="HiLocationMarker"/> Prishtine - New York City</h3>
+              <h3 className="h3-header"><HiLocationMarker className="HiLocationMarker"/> Prishtine - Rome</h3>
               <br />
               <p className="paragraph-nyc">
-                Welcome to our agency, your gateway to an unforgettable New York City experience! Embark on a journey with us that promises to immerse you in the vibrant energy, 
-                iconic landmarks, and cultural diversity that define the heart of the Big Apple.
-                When you choose to explore New York City with our agency, you're choosing a curated adventure that goes beyond the ordinary. 
-                Our expertly crafted itineraries ensure you won't miss a single moment of the city's magic, 
-                from the towering marvels of Times Square to the serene beauty of Central Park.
-                Our team of seasoned travel professionals is dedicated to making your visit seamless and extraordinary. 
-                Discover hidden gems tucked away in diverse neighborhoods, savor the culinary delights that span the globe, and witness world-class entertainment
-                that only New York City can offer. <br /> 
-                Departure 07:30 <br />
-                In Summer every Monday, <br />
+              Embarking on a journey to Rome, Italy is like stepping into a captivating time capsule, 
+              where ancient history and modern life seamlessly intertwine. 
+              As you wander through the cobbled streets of this enchanting city,
+               you'll be transported back in time while savoring the vibrant culture and culinary delights of the present.<br />
+               Your first stop might be the iconic Colosseum, a colossal amphitheater that once hosted thrilling gladiator battles.
+                As you stand in its shadow, you can almost hear the echoes of ancient cheers and roars. 
+                Nearby, the Roman Forum beckons, inviting you to explore the ruins of temples, basilicas, 
+                and marketplaces that once formed the heart of ancient Rome. <br />
+                Departure 08:00 <br />
+                In Summer every Friday, <br />
                 Winter once a month, <br />
-                New York - Prishtine <br />
-                Once a month, <br />
-                Price round 1010<BsCurrencyEuro/>
+                Rome - Prishtine <br />
+                Once a week, <br />
+                Price round 749<BsCurrencyEuro/>
 
 
               </p>
@@ -124,4 +124,4 @@ function NewYork() {
   );
 }
 
-export default NewYork;
+export default Rome;
