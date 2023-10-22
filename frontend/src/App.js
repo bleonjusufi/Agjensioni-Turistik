@@ -11,6 +11,10 @@ import NewYork from './Components/Pages/NewYork'
 import BookingForm from './Components/Pages/bookingForm'
 import Mykonos from './Components/Pages/Mykonos'
 import Rome from './Components/Pages/Rome'
+import Dashboard from './Components/Dashboard'
+
+
+
 
 function App() {
   return (
@@ -28,6 +32,9 @@ function App() {
           <Route path='/bookingForm' element = {<BookingForm />} />
           <Route path='/Mykonos' element = {<Mykonos />} />
           <Route path='/Rome' element = {<Rome />} />
+          <Route path='/Dashboard' element = {<Dashboard />} />
+          
+          
         </Routes>
       </Router>
     </>
