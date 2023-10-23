@@ -58,3 +58,9 @@
     border-radius: 50%;
     cursor: pointer;
 }
+.dashboardContainer{
+    display: flex;
+}
+.others{
+    flex: 4;
+}

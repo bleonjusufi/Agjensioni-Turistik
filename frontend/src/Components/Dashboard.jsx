@@ -1,5 +1,6 @@
 import './CSS/dashboard.css';
-import Topbar from '../Components/Topbar/topbar'
+import Topbar from './Topbar/topbar'
+import Sidebar from './sidebar/Sidebar';
 
 
 
@@ -10,7 +11,10 @@ function Dashboard() {
         <>
         <div className="dash-container">
             <Topbar/>
-         
+            <div className='dashboardContainer'>
+                <Sidebar/>
+                <div className='others'>other pages</div>
+            </div>
         </div>
         
         </>
