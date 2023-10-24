@@ -12,6 +12,7 @@ import { FaCity } from 'react-icons/fa';
 import { BsSunglasses } from 'react-icons/bs';
 import { BsStars } from 'react-icons/bs';
 import Man from '../Images/likeman.jpg';
+import HappyMan from '../Images/happyman.png';
 import Footer from '../Pages/Footer.jsx';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
@@ -51,11 +52,13 @@ function Home() {
 
                                 </p>
                                 <br />
-                                <p className="title">1010<BsCurrencyEuro/> 5 days</p>
+                                <div className="book-now">
+                                <p className="title">899<BsCurrencyEuro/>  6 days</p>
 
-                                <Link to = "/bookingForm" id="offers-button">Book now</Link> 
+                                <Link to = "/bookingForm" id="booking-button">Book now</Link> 
                                 <br></br>
                                 <span><br></br></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -70,11 +73,13 @@ function Home() {
                                 Your journey to the heart of Mykonos awaits, where dreams are woven into reality.
                                 </p>
                                 <br />
+                                <div className="book-now">
                                 <p className="title">899<BsCurrencyEuro/>  6 days</p>
 
-                                <Link to = "/bookingForm" id="offers-button">Book now</Link> 
+                                <Link to = "/bookingForm" id="booking-button">Book now</Link> 
                                 <br></br>
                                 <span><br></br></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -90,11 +95,13 @@ function Home() {
                             
                                 </p>
                                 <br />
-                                <p className="title">659<BsCurrencyEuro/>  5 days</p>
+                                <div className="book-now">
+                                <p className="title">899<BsCurrencyEuro/>  6 days</p>
 
-                                <Link to = "/bookingForm" id="offers-button">Book now</Link>
+                                <Link to = "/bookingForm" id="booking-button">Book now</Link> 
                                 <br></br>
-                                <span><br></br></span> 
+                                <span><br></br></span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -130,7 +137,7 @@ function Home() {
                                 we offer always the best</p>
                         </div>
                         <div class="column">
-                            <img src={Man} alt="likeMan" className="likeman" />
+                            <img src={HappyMan} alt="likeMan" className="likeman" />
                         </div>
                         
                     </div>
@@ -139,7 +146,7 @@ function Home() {
 
                     <div className="cards-container">
                             <h1 className="home-header">HAPPY TRAVELER</h1>
-                            <h3 className="home-header3 travelH3">* Relax & Enjoy* </h3>
+                            <h3 className="home-header3 travelH3">* Relax & Enjoy * </h3>
 
                             <div className="slider-container">
                                 <Carousel

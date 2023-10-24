@@ -12,6 +12,7 @@ import BookingForm from './Components/Pages/bookingForm'
 import Mykonos from './Components/Pages/Mykonos'
 import Rome from './Components/Pages/Rome'
 import Dashboard from './Components/Dashboard'
+import Payment from './Components/Pages/Payment';
 
 
 
@@ -33,7 +34,7 @@ function App() {
           <Route path='/Mykonos' element = {<Mykonos />} />
           <Route path='/Rome' element = {<Rome />} />
           <Route path='/Dashboard' element = {<Dashboard />} />
-          
+          <Route path='/payment' element = {<Payment />} />
           
         </Routes>
       </Router>

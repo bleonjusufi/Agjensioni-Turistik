@@ -25,11 +25,27 @@
 .home-header{
     margin-left: 100px;
     padding-top: 50px;
+    color: red;
 }
 .home-header3{
-    color: #890303;
+    color: black;
     margin-left: 120px;
     margin-bottom: -70px;
+}
+.book-now{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#booking-button{
+    background-color: #ff3131;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 65px;
 }
 .row-conntainer{
     margin: 0 105px;
@@ -88,7 +104,9 @@
 }
 .end{
     text-align: start;
+    color: red;
 }
 .endP{
     padding-bottom: 30px;
+    color: black;
 }
