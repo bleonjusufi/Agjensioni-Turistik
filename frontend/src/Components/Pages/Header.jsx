@@ -18,6 +18,7 @@ function Header() {
                         <Link to = "/blog" className="li">Blog</Link>
                         <Link to = "/about" className="li">About Us</Link>
                         <Link to = "/contact" className="li">Contact Us</Link>
+                        <Link to = "/payment" className="li">Payment</Link>
                     </ul>
                 </div>
                 <div className="registration">
