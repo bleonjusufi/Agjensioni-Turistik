@@ -9,6 +9,7 @@ import Bali from '../Images/Bali.jpg';
 import Monaco from '../Images/MONACOO.jpg';
 import Egypt from '../Images/egyypt.jpg';
 import offersPhoto from '../Images/couple-travel.jpg';
+import Couple from '../Images/couple.jpg';
 import { BsCurrencyEuro } from 'react-icons/bs';
 import Footer from '../Pages/Footer.jsx';
 import BookingForm from './bookingForm';
@@ -19,7 +20,7 @@ function Offers() {
         <Header />
         <div className="content">
             <div>
-            <img src={offersPhoto} className="coupleImg" alt="couple-img" />
+            <img src={Couple} className="coupleImg" alt="couple-img" />
             <h1 className="offers-text">Offers</h1>
             </div>
           
