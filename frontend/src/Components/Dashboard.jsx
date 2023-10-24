@@ -1,7 +1,7 @@
 import './CSS/dashboard.css';
 import Topbar from './Topbar/topbar'
 import Sidebar from './sidebar/Sidebar';
-
+import DashHome from './dashHome/dashHome';
 
 
 
@@ -13,7 +13,7 @@ function Dashboard() {
             <Topbar/>
             <div className='dashboardContainer'>
                 <Sidebar/>
-                <div className='others'>other pages</div>
+                <DashHome/>
             </div>
         </div>
         
