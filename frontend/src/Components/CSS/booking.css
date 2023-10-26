@@ -27,7 +27,7 @@ input[type="text"] {
     background: #f5fafe;
     border-radius: 6px;
 }
-button {
+.success-button{
     padding: 13px 26px;
     color: white;
     font-size: 12px;
@@ -39,12 +39,11 @@ button {
 main{
     display: flex;
 }
-.log-in__container {
+.booking-form__container {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     width: 400px;
-    margin-top: 120px;
 }
 h2{
     text-align: center;

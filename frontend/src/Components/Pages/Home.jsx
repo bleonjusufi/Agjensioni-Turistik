@@ -29,7 +29,7 @@ function Home() {
             <div className="home-container">
                 <div className="home-wrapper1">
                 <img src={HomePhoto} alt="HomePhoto" className="nyc picture"/>
-                <h1 className="offers-text mainText">The World Is Yours</h1>
+                <h1 className="main-text">The World Is Yours</h1>
                 <h3 className="text3">Home Page</h3>
                 </div>
 

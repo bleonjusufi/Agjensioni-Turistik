@@ -12,10 +12,11 @@
 .offers-text{
     color: #ff3131;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size:50px;
+    text-shadow: 2px 2px  #890303;
 }
 .container{
     max-width: 1200px;

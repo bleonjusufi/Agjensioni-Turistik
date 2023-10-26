@@ -15,7 +15,7 @@
 .text3{
     color: black;
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -31,6 +31,15 @@
     color: black;
     margin-left: 120px;
     margin-bottom: -70px;
+}
+.main-text {
+    color: #ff3131;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:50px;
+    text-shadow: 2px 2px  #890303;
 }
 .book-now{
     display: flex;

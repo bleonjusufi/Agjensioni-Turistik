@@ -128,7 +128,6 @@ function Payment() {
                                 </div>
                             </div>
                         </div>
-
                         <div className="card-item__side -back">
                             <div className="card-item__cover">
                                 <img src={`https://raw.githubusercontent.com/muhammederdem/credit-card-form/master/src/assets/images/${currentCardBackground}.jpeg`} className="card-item__bg" alt="" />
@@ -148,7 +147,6 @@ function Payment() {
                         </div>
                     </div>
                 </div>
-
                 <div className="card-form__inner">
                     <div className="card-input">
                         <label htmlFor="cardNumber" className="card-input__label">Card Number</label>
@@ -226,7 +224,6 @@ function Payment() {
                             </div>
                         </div>
                     </div>
-
                     <button className="card-form__button">
                         Submit
                     </button>
