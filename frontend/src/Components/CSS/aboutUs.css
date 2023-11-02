@@ -4,8 +4,14 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.offers-text{
-    text-shadow: 2px 2px  #890303;
+.about-title{
+  color: #ff3131;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:50px;
+  text-shadow: 2px 2px  #890303;
 }
 .aboutUs-text{
     text-align: start;

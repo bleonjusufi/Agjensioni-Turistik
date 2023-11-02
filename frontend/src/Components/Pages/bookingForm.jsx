@@ -7,7 +7,7 @@ function bookingForm() {
         <body className="body">
     <main>
       <div class="container">
-        <div class="log-in__container">
+        <div class="booking-form__container">
           <form id="form" class="form" autocomplete="off">
             <h2>Booking Form</h2>
             <div class="form-control">
@@ -21,20 +21,20 @@ function bookingForm() {
             <div class="form-control">
               <label for="text">Going To</label>
               <input
-                type="password"
+                type="text"
                 id="to"
                 placeholder="Enter your destination..."
               />
             </div>
             <div class="form-control">
-              <label for="date">Going Date</label>
+              <label for="date">Departure date</label>
               <input
                 type="date"
                 id="date"
               />
             </div>
             <div class="form-control">
-              <label for="date">Coming Back Date</label>
+              <label for="date">Return Date</label>
               <input
                 type="date"
                 id="date"
@@ -58,7 +58,8 @@ function bookingForm() {
             </div>
             <div class="buttons">
               <Link to = "/" class="cancel-button">Return</Link> 
-              <button type="submit">Book</button>
+              {/* <button type="submit">Book</button> */}
+              <Link to = "/payment" className="success-button">Book</Link>
             </div>
           </form>
         </div>

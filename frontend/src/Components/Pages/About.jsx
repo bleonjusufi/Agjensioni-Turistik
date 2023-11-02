@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import aboutUs from '../Images/aboutus3.jpg';
+import Plane from '../Images/plane.jpg';
 import { SiYourtraveldottv } from 'react-icons/si';
 import { TbZoomMoney } from 'react-icons/tb';
 import { FcServices } from 'react-icons/fc';
@@ -14,8 +15,8 @@ function About() {
         <Header />
         <div className="container-aboutUs">
           <div className="head">
-            <img src={aboutUs} alt="aboutUs" className="nyc"/>
-            <h1 className="offers-text">About Us</h1>
+            <img src={Plane} alt="aboutUs" className="nyc"/>
+            <h1 className="about-title">About Us</h1>
           </div>
   
           <div className="travel-offer">
