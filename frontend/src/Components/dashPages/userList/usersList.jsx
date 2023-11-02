@@ -8,13 +8,16 @@ import Dashboard from '../../Dashboard';
 
 export default function usersList() {
   return (
-    <div className='usersList'>
-      <div className="dashboardDiv">
-        <Dashboard/>
-      </div>
-      <div className="otherContainer">
-        </div>        
-      <h1>lori</h1>
-    </div>
+    <div className="usersList">
+            <Topbar/>
+            <div className='dashboardContainer'>
+                <Sidebar/>
+                 <div className="usersWrapper">
+                  <h1>Users</h1>
+                 </div>
+                
+            </div>
+        </div>
+        
   )
 }
