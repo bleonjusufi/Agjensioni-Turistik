@@ -4,6 +4,7 @@ import {MdLineStyle, MdOutlineMail, MdOutlineLocalOffer, MdOutlineRateReview,MdO
 import {IoPeopleSharp} from 'react-icons/io5';
 import {BsCheckCircle, BsPeople, BsCurrencyDollar} from 'react-icons/bs';
 import {BiSolidBookHeart} from 'react-icons/bi';
+import {Link} from 'react-router-dom';
 
 
 export default function Sidebar() {
@@ -15,11 +16,11 @@ export default function Sidebar() {
                 <ul className="sidebarList">
                     <li className="sidebarListItem">
                         <MdLineStyle className='dashIcons'/>
-                         Home
+                        <Link to="/" className='link'>Home</Link>
                     </li>
                     <li className="sidebarListItem">
                         <BsPeople className='dashIcons'/>
-                         Users
+                        <Link to="/users" className='link'>Users</Link>
                     </li>
                     <li className="sidebarListItem">
                         <BsCheckCircle className='dashIcons'/>

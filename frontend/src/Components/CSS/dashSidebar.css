@@ -32,3 +32,7 @@
 .sidebarListItem.active, .sidebarListItem:hover{
     background-color: lightgray;
 }
+.link {
+    text-decoration: none; /* Remove the underline */
+    color: black;          /* Set the color to black */
+  }
