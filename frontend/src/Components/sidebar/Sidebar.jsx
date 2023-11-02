@@ -2,7 +2,7 @@ import React from 'react'
 import '../CSS/dashSidebar.css';
 import {MdLineStyle, MdOutlineMail, MdOutlineLocalOffer, MdOutlineRateReview,MdOutlineMiscellaneousServices} from 'react-icons/md';
 import {IoPeopleSharp} from 'react-icons/io5';
-import {BsCheckCircle, BsPeople} from 'react-icons/bs';
+import {BsCheckCircle, BsPeople, BsCurrencyDollar} from 'react-icons/bs';
 import {BiSolidBookHeart} from 'react-icons/bi';
 
 
@@ -60,6 +60,10 @@ export default function Sidebar() {
                     <li className="sidebarListItem">
                         <MdOutlineMail className='dashIcons'/>
                         Feedback
+                    </li>
+                    <li className="sidebarListItem">
+                        <BsCurrencyDollar className='dashIcons'/>
+                        Payments
                     </li>
                 </ul>
             </div>
