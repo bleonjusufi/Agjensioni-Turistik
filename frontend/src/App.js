@@ -23,7 +23,7 @@ function App() {
     <>
       <Router>
         <Routes>
-          <Route path='/home' element = {<Home />} />
+          <Route path='/' element = {<Home />} />
           <Route path='/offers' element = {<Offers />} />
           <Route path='/blog' element = {<Blog />} />
           <Route path='/about' element = {<About />} />
@@ -35,7 +35,7 @@ function App() {
           <Route path='/Mykonos' element = {<Mykonos />} />
           <Route path='/Rome' element = {<Rome />} />
           <Route path='/payment' element = {<Payment />} />
-          <Route path='/' element = {<Dashboard />} />
+          <Route path='/Dashboard' element = {<Dashboard />} />
           <Route path='/users' element = {<UsersList />} />
           
           
