@@ -14,7 +14,9 @@ import Rome from './Components/Pages/Rome'
 import Dashboard from './Components/Dashboard'
 import Payment from './Components/Pages/Payment';
 import UsersList from './Components/dashPages/userList/usersList';
-
+import Employees from './Components/dashPages/Employees/employees';
+import AddEmployee from './Components/dashPages/Employees/addEmployee';
+import UpdateEmployee from './Components/dashPages/Employees/updateEmployee';
 
 
 
@@ -37,8 +39,9 @@ function App() {
           <Route path='/payment' element = {<Payment />} />
           <Route path='/Dashboard' element = {<Dashboard />} />
           <Route path='/users' element = {<UsersList />} />
-          
-          
+          <Route path='/employees' element = {<Employees />} />
+          <Route path='/addEmployee' element = {<AddEmployee />} />
+          <Route path='/updateEmployee' element = {<UpdateEmployee />} />
         </Routes>
       </Router>
     </>

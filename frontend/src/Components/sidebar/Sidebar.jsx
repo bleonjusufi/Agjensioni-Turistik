@@ -74,7 +74,7 @@ export default function Sidebar() {
                 <ul className="sidebarList">
                     <li className="sidebarListItem">
                         <IoPeopleSharp className='dashIcons'/>
-                        Employees
+                        <Link to="/employees" className='link'>Employees</Link>
                     </li>
                 </ul>
             </div>
