@@ -8,7 +8,6 @@ import Rome from '../Images/romee.jpg';
 import Bali from '../Images/Bali.jpg';
 import Monaco from '../Images/MONACOO.jpg';
 import Egypt from '../Images/egyypt.jpg';
-import offersPhoto from '../Images/couple-travel.jpg';
 import Couple from '../Images/couple.jpg';
 import { BsCurrencyEuro } from 'react-icons/bs';
 import Footer from '../Pages/Footer.jsx';
