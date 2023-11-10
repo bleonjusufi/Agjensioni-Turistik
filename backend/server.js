@@ -1,79 +1,60 @@
 const express = require('express');
-const mongoose = require('mongoose');
-const app = express();
 const bodyParser = require('body-parser');
+const mysql = require('mysql');
+const cors = require('cors');
+const app = express();
+const port = 8080;
+const bcrypt = require('bcrypt');
+
+app.use(cors({
+  origin: 'http://localhost:3000', // Replace with the origin of your React app
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true,
+}));
+// Replace with your MySQL database configuration
+const db = mysql.createConnection({
+  host: 'localhost',
+  user: 'bleonjusufi',
+  password: '12345678',
+  database: 'travelagency',
+});
+
+db.connect((err) => {
+  if (err) {
+    console.error('Database connection failed:', err);
+  } else {
+    console.log('Connected to the database');
+  }
+});
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
-const url = 'mongodb+srv://PrTravelAgency:BleonLorena@travelagency.eg9c6mq.mongodb.net/?retryWrites=true&w=majority'
+// Handle registration endpoint
+app.post('/Signup', async (req, res) => {
+  const { emri, email, password } = req.body;
 
-async function connect() {
-    try{
-        await mongoose.connect(url)
-        console.log("Connected to MongoDB");
-    }catch (error) {
-        console.error(error);
-    }
-}
+  try {
+    // Hash the password before storing it
+    const hashedPassword = await bcrypt.hash(password, 10);
+    const hashedPassword2 = await bcrypt.hash(password2, 10);
 
-connect();
-
-const userSchema = new mongoose.Schema({
-    username: {
-      type: String,
-      required: true,
-    },
-    email: {
-      type: String,
-      required: true,
-      unique: true,
-    },
-    password: {
-      type: String,
-      required: true,
-    },
-  });
-  
-  const User = mongoose.model('User', userSchema);
-  
-  app.post('/signup', async (req, res) => {
-    try {
-      const {
-        username,
-        email,
-        password,
-        password2
-      } = req.body;
-  
-      if (!username || !email || !password || !password2) {
-        return res.status(400).json({ msg: 'Please fill in all required fields' });
+    const sql = 'INSERT INTO user (emri, email, password, password2) VALUES (?, ?, ?, ?)';
+    db.query(sql, [emri, email, hashedPassword, hashedPassword2], (err, result) => {
+      if (err) {
+        console.error('Registration failed:', err);
+        res.status(500).json({ success: false, message: 'Registration failed' });
+      } else {
+        console.log('User registered successfully');
+        res.status(200).json({ success: true, message: 'User registered successfully' });
       }
-  
-      if (password !== password2) {
-        return res.status(400).json({ msg: 'Passwords do not match' });
-      }
-  
-      const existingUser = await User.findOne({ email });
-      if (existingUser) {
-        return res.status(400).json({ msg: 'Email is already registered' });
-      }
-  
-      const newUser = new User({
-        username,
-        email,
-        password
-      });
-  
-      await newUser.save();
-  
-      res.status(200).json({ msg: 'Signup successful' });
-    } catch (error) {
-      console.error('Error:', error);
-      res.status(500).json({ msg: 'Signup failed' });
-    }
-  });
-  
+    });
+  } catch (error) {
+    console.error('Password hashing failed:', error);
+    res.status(500).json({ success: false, message: 'Password hashing failed' });
+  }
+});
 
-app.listen(8080, () => {
-    console.log("Server running on port 8080")
-})
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});
