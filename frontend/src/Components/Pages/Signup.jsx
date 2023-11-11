@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../CSS/Signup.css'
 
 const Signup = () => {
   const [formData, setFormData] = useState({
@@ -16,20 +17,15 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Check if passwords match
-    if (formData.password !== formData.confirmPassword) {
+    if (formData.password !== formData.password2) {
       alert("Passwords don't match");
       return;
     }
 
     try {
-      // Make a POST request to the Node.js backend
       const response = await axios.post('http://localhost:8080/Signup', formData);
-
-      // Handle the response (you may want to redirect the user or show a success message)
       console.log(response.data);
     } catch (error) {
-      // Handle errors (you may want to show an error message to the user)
       console.error('Registration failed', error);
     }
   };
