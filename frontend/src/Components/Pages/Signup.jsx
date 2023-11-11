@@ -1,108 +1,74 @@
-import React, { useState } from "react";
-import {Link} from 'react-router-dom'
-import '../CSS/Signup.css'
+import React, { useState } from 'react';
+import axios from 'axios';
 
-function Signup() {
+const Signup = () => {
   const [formData, setFormData] = useState({
-    username: '',
+    emri: '',
     email: '',
     password: '',
-    password2: '',
+    confirmPassword: '',
   });
 
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value,
-    });
+    setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch('/signup', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
+    // Check if passwords match
+    if (formData.password !== formData.confirmPassword) {
+      alert("Passwords don't match");
+      return;
+    }
 
-      if (response.status === 200) {
-        // Handle successful signup, e.g., redirect the user to the login page.
-        console.log('Signup successful!');
-      } else {
-        // Handle errors, e.g., display an error message.
-        console.error('Signup failed');
-      }
+    try {
+      // Make a POST request to the Node.js backend
+      const response = await axios.post('http://localhost:8080/Signup', formData);
+
+      // Handle the response (you may want to redirect the user or show a success message)
+      console.log(response.data);
     } catch (error) {
-      console.error('Error:', error);
+      // Handle errors (you may want to show an error message to the user)
+      console.error('Registration failed', error);
     }
   };
-    return (
-      <body className="body">
-      <main>
-        <div className="container">
-          <div className="sign-up__container">
-            <form id="form" className="form" autoComplete="off" onSubmit={handleSubmit}>
-              <h2>Sign Up</h2>
-              <div className="form-control">
-                <label htmlFor="username">Your Name</label>
-                <input
-                  type="text"
-                  id="username"
-                  name="username"
-                  placeholder="Enter Your Name"
-                  value={formData.username}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="form-control">
-                <label htmlFor="email">Email Address</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="Enter Email Address"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="form-control">
-                <label htmlFor="password">Password</label>
-                <input
-                  type="password"
-                  id="password"
-                  name="password"
-                  placeholder="Enter Password"
-                  value={formData.password}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="form-control">
-                <label htmlFor="password2">Confirm Password</label>
-                <input
-                  type="password"
-                  id="password2"
-                  name="password2"
-                  placeholder="Confirm Password"
-                  value={formData.password2}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="buttons">
-                <a href="/" className="cancel-button">Return</a>
-                <button type="submit">Sign Up</button>
-              </div>
-              <a href="/login">Already have an account! Login here</a>
-            </form>
-          </div>
-        </div>
-      </main>
-    </body>
-    )
-}
 
-export default Signup
+  return (
+    <form onSubmit={handleSubmit}>
+      <label>
+        Name:
+        <input type="text" name="emri" value={formData.name} onChange={handleChange} required />
+      </label>
+      <br />
+
+      <label>
+        Email:
+        <input type="email" name="email" value={formData.email} onChange={handleChange} required />
+      </label>
+      <br />
+
+      <label>
+        Password:
+        <input type="password" name="password" value={formData.password} onChange={handleChange} required />
+      </label>
+      <br />
+      
+      <label>
+        Confirm Password:
+        <input
+          type="password"
+          name="password2"
+          value={formData.password2}
+          onChange={handleChange}
+          required
+        />
+      </label>
+      <br />
+
+      <button type="submit">Register</button>
+    </form>
+  );
+};
+
+export default Signup;
