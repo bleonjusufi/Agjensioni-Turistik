@@ -18,6 +18,28 @@ async function connect() {
 
 connect();
 
+app.post("/addEmployee", (req, res) =>{
+  EmployeeModel.create(req.body)
+  .then(employees => res.json(employees))
+  .catch(err => res.json(err))
+})
+/*
+const app = express();
+const bodyParser = require('body-parser');
+
+app.use(bodyParser.json());
+
+  async function connect() {
+    try{
+        await mongoose.connect(url)
+        console.log("Connected to MongoDB");
+    }catch (error) {
+        console.error(error);
+    }
+}
+
+connect();
+
 const userSchema = new mongoose.Schema({
     username: {
       type: String,
@@ -74,6 +96,8 @@ const userSchema = new mongoose.Schema({
   });
   
 
-app.listen(8080, () => {
-    console.log("Server running on port 8080")
+*/
+
+app.listen(8081, () => {
+    console.log("Server running on port 8081")
 })
