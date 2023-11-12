@@ -5,6 +5,8 @@ const cors = require('cors');
 const app = express();
 const port = 8080;
 const bcrypt = require('bcrypt');
+const employeesRoutes = require('./Routes/employees');
+
 
 app.use(cors({
   origin: 'http://localhost:3000', // Replace with the origin of your React app
@@ -14,8 +16,8 @@ app.use(cors({
 // Replace with your MySQL database configuration
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'bleonjusufi',
-  password: '12345678',
+  user: 'root',
+  password: '',
   database: 'travelagency',
 });
 
@@ -26,6 +28,7 @@ db.connect((err) => {
     console.log('Connected to the database');
   }
 });
+
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -54,6 +57,10 @@ app.post('/Signup', async (req, res) => {
     res.status(500).json({ success: false, message: 'Password hashing failed' });
   }
 });
+
+// Middleware
+app.use(bodyParser.json());
+app.use('/api', employeesRoutes);
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

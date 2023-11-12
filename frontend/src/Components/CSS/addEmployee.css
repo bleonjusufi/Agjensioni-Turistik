@@ -48,4 +48,10 @@
   .add-employee button:hover {
     background-color: #0056b3;
   }
+  .error-message{
+    color: #ff0000; 
+  }
+  .success-message{
+    color: green;
+  }
   
