@@ -34,10 +34,10 @@ function Employees() {
       <div className='dashboardContainer'>
         <Sidebar />
         <div className="employeesWrapper">
-          <h1>Employees</h1>
+          <h1 className='employeeHeader'>Employees</h1>
           <div className="search-and-add">
-            <div className="add-link">
-              <Link to="/addEmployee">Add Employee</Link>
+            <div className="add-link" >
+              <Link to="/addEmployee" >Add Employee</Link>
             </div>
           </div>
           <table className="employee-table">
