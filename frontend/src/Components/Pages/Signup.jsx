@@ -7,7 +7,7 @@ const Signup = () => {
     emri: '',
     email: '',
     password: '',
-    confirmPassword: '',
+    password2: '',
   });
 
   const handleChange = (e) => {
