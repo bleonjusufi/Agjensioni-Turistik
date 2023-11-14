@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../../CSS/addEmployee.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 export default function AddEmployee() {
   const [name, setName] = useState('');
@@ -60,6 +61,10 @@ export default function AddEmployee() {
         {error && <p className="error-message">{error}</p>}
         {success && <p className="success-message">{success}</p>}
         <button type="submit">Add New Employee</button>
+        <Link to="/employees">
+          <button>Go Back</button>
+        </Link>
+  
       </form>
     </div>
   );

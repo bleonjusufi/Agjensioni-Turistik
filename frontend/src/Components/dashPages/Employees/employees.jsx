@@ -1,54 +1,32 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../CSS/employees.css';
-import { FaSearch } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Topbar from '../../Topbar/topbar';
 import Sidebar from '../../sidebar/Sidebar';
 
-const SearchAndAdd = ({ employees }) => {
-  const [searchQuery, setSearchQuery] = useState('');
-  const [searchResult, setSearchResult] = useState(null);
-
-  const handleSearch = () => {
-    // Perform the search in your employee data based on the searchQuery
-    const result = employees.find(
-      (employee) =>
-        employee.name.toLowerCase() === searchQuery.toLowerCase() &&
-        employee.surname.toLowerCase() === searchQuery.toLowerCase()
-    );
-    setSearchResult(result);
-  };
-
-  return (
-    <div className="search-and-add">
-      <div className="search-icon" >
-        <FaSearch />
-      </div>
-      <div className="add-link">
-        <Link to="/addEmployee">Add Employee</Link>
-      </div>
-    </div>
-  );
-};
-
 function Employees() {
-  const employees1 = [
-    {
-      id: 1,
-      name: 'John',
-      surname: 'Doe',
-      email: 'john.doe@example.com',
-      phone: '555-555-5555',
-    },
-    {
-      id: 2,
-      name: 'Jane',
-      surname: 'Smith',
-      email: 'jane.smith@example.com',
-      phone: '555-555-5556',
-    },
-    // Add more employee data as needed
-  ];
+  const [employees, setEmployees] = useState([]);
+
+  useEffect(() => {
+    // Fetch data from your backend when the component mounts
+    fetchEmployees();
+  }, []);
+
+  const fetchEmployees = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/api/employees');
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      const data = await response.json();
+      console.log('Server Response:', data);
+
+      // Ensure data is an array before setting the state
+      setEmployees(Array.isArray(data.employees) ? data.employees : []);
+    } catch (error) {
+      console.error('Error fetching employees:', error);
+    }
+  };
 
   return (
     <div className="employees">
@@ -57,9 +35,11 @@ function Employees() {
         <Sidebar />
         <div className="employeesWrapper">
           <h1>Employees</h1>
-
-          <SearchAndAdd employees={employees1} /> {/* Include the SearchAndAdd component here */}
-          
+          <div className="search-and-add">
+            <div className="add-link">
+              <Link to="/addEmployee">Add Employee</Link>
+            </div>
+          </div>
           <table className="employee-table">
             <thead>
               <tr>
@@ -71,18 +51,19 @@ function Employees() {
               </tr>
             </thead>
             <tbody>
-              {employees1.map((employee) => (
-                <tr key={employee.id}>
-                  <td>{employee.name}</td>
-                  <td>{employee.surname}</td>
-                  <td>{employee.email}</td>
-                  <td>{employee.phone}</td>
+              {employees.map((employee) => (
+                <tr key={employee.ID}>
+                  <td>{employee.Name}</td>
+                  <td>{employee.Surname}</td>
+                  <td>{employee.Email}</td>
+                  <td>{employee.Phone}</td>
                   <td>
-                    <Link to="/updateEmployee">
+                    <Link to={`/updateEmployee/${employee.ID}`}>
                       <button className="edit-button">Edit</button>
                     </Link>
-
-                    <button className="delete-button">Delete</button>
+                    <Link to={`/deleteEmployee/${employee.ID}`}>
+                      <button className="delete-button">Delete</button>
+                    </Link>
                   </td>
                 </tr>
               ))}

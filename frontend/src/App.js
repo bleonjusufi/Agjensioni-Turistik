@@ -15,8 +15,9 @@ import Dashboard from './Components/Dashboard'
 import Payment from './Components/Pages/Payment';
 import UsersList from './Components/dashPages/userList/usersList';
 import Employees from './Components/dashPages/Employees/employees';
-import AddEmployee from './Components/dashPages/Employees/addEmployee';
+import AddEmployee from './Components/dashPages/Employees/AddEmployee';
 import UpdateEmployee from './Components/dashPages/Employees/updateEmployee';
+import DeleteEmployee from './Components/dashPages/Employees/deleteEmployee';
 
 
 
@@ -41,7 +42,8 @@ function App() {
           <Route path='/users' element = {<UsersList />} />
           <Route path='/employees' element = {<Employees />} />
           <Route path='/addEmployee' element = {<AddEmployee />} />
-          <Route path='/updateEmployee' element = {<UpdateEmployee />} />
+          <Route path='/updateEmployee/:id' element = {<UpdateEmployee />} />
+          <Route path='/deleteEmployee/:id' element = {<DeleteEmployee />} />
         </Routes>
       </Router>
     </>
