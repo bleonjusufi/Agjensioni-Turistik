@@ -18,6 +18,10 @@ import Employees from './Components/dashPages/Employees/employees';
 import AddEmployee from './Components/dashPages/Employees/AddEmployee';
 import UpdateEmployee from './Components/dashPages/Employees/updateEmployee';
 import DeleteEmployee from './Components/dashPages/Employees/deleteEmployee';
+import OffersManagement from './Components/dashPages/Offers/offersManagement';
+import AddOffer from './Components/dashPages/Offers/addOffer';
+import UpdateOffer from './Components/dashPages/Offers/updateOffer';
+import DeleteOffer from './Components/dashPages/Offers/deleteOffer';
 
 
 
@@ -44,6 +48,10 @@ function App() {
           <Route path='/addEmployee' element = {<AddEmployee />} />
           <Route path='/updateEmployee/:id' element = {<UpdateEmployee />} />
           <Route path='/deleteEmployee/:id' element = {<DeleteEmployee />} />
+          <Route path='/offersManagement' element = {<OffersManagement />} />
+          <Route path='/addOffer' element = {<AddOffer />} />
+          <Route path='/updateOffer/:id' element = {<UpdateOffer />} />
+          <Route path='/deleteOffer/:id' element = {<DeleteOffer />} />
         </Routes>
       </Router>
     </>

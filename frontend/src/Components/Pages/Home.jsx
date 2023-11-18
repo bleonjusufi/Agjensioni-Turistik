@@ -11,7 +11,6 @@ import { BsFillTicketDetailedFill } from 'react-icons/bs';
 import { FaCity } from 'react-icons/fa';
 import { BsSunglasses } from 'react-icons/bs';
 import { BsStars } from 'react-icons/bs';
-import Man from '../Images/likeman.jpg';
 import HappyMan from '../Images/happyman.png';
 import Footer from '../Pages/Footer.jsx';
 import { Carousel } from 'react-responsive-carousel';

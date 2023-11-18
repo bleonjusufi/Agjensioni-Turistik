@@ -1,7 +1,7 @@
-.employeesWrapper{
+.Wrapper{
     flex: 4;
 }
-.employee-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
@@ -10,26 +10,26 @@
     overflow-y: auto; /* Add a vertical scrollbar if the table overflows */
   }
   
-  .employee-table th {
+  .table th {
     background-color: #f2f2f2;
   }
   
-  .employee-table th,
-  .employee-table td {
+  .table th,
+  .table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: left;
   }
   
-  .employee-table tr:nth-child(even) {
+  .table tr:nth-child(even) {
     background-color: #f2f2f2;
   }
   
-  .employee-table tr:hover {
+  .table tr:hover {
     background-color: #ddd;
   }
   
-  .employee-table .edit-button {
+  .table .edit-button {
     background-color: #007bff; /* Make the "Edit" button blue */
     color: #fff;
     border: none;
@@ -38,11 +38,11 @@
     margin-right: 5px;
   }
   
-  .employee-table .edit-button:hover {
+  .table .edit-button:hover {
     background-color: #0056b3; /* Change the blue shade on button hover */
   }
   
-  .employee-table .delete-button {
+  .table .delete-button {
     background-color: #ff0000; /* Make the "Delete" button red */
     color: #fff;
     border: none;
@@ -51,11 +51,11 @@
     margin-right: 5px;
   }
   
-  .employee-table .delete-button:hover {
+  .table .delete-button:hover {
     background-color: #cc0000; /* Change the red shade on button hover */
   }
 
-  /* CSS */
+
 .search-and-add {
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@
   .add-link a:hover {
     color: #0056b3;
   }
-  .employeeHeader{
+  .Header{
     margin-bottom: 20px;
   }
   

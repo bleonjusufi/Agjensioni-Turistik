@@ -38,7 +38,7 @@ export default function Sidebar() {
                     </li>
                     <li className="sidebarListItem">
                         <MdOutlineLocalOffer className='dashIcons'/>
-                         Offers
+                        <Link to="/offersManagement" className='link'>Offers</Link>
                     </li>
                     <li className="sidebarListItem">
                         <MdOutlineRateReview className='dashIcons'/>

@@ -39,7 +39,7 @@ export default function AddEmployee() {
   };
 
   return (
-    <div className="add-employee">
+    <div className="add">
       <h2>Add Employee</h2>
       <form onSubmit={handleSubmit}>
         <div>

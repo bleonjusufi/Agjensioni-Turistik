@@ -1,6 +1,5 @@
 import React from "react";
 import Header from "./Header";
-import aboutUs from '../Images/aboutus3.jpg';
 import Plane from '../Images/plane.jpg';
 import { SiYourtraveldottv } from 'react-icons/si';
 import { TbZoomMoney } from 'react-icons/tb';
