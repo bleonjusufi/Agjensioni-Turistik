@@ -4,6 +4,10 @@
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.aboutusPhoto{
+    width: 100%;
+    height: 70vh;
+}
 .about-title{
   color: #ff3131;
   position: absolute;

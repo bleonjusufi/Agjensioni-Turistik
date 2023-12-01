@@ -14,7 +14,7 @@ function About() {
         <Header />
         <div className="container-aboutUs">
           <div className="head">
-            <img src={Plane} alt="aboutUs" className="nyc"/>
+            <img src={Plane} alt="aboutUs" className="aboutusPhoto"/>
             <h1 className="about-title">About Us</h1>
           </div>
   

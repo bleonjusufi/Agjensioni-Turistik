@@ -1,162 +1,144 @@
 import React from "react";
-import Header from './Header';
+import Header from "./Header";
 import { Link } from "react-router-dom";
-import '../CSS/Offers.css';
-import NewYork from '../Images/newyorkk.jpg';
-import Mykonos from '../Images/Mykonos.jpg';
-import Rome from '../Images/romee.jpg';
-import Bali from '../Images/Bali.jpg';
-import Monaco from '../Images/MONACOO.jpg';
-import Egypt from '../Images/egyypt.jpg';
-import Couple from '../Images/couple.jpg';
-import { BsCurrencyEuro } from 'react-icons/bs';
-import Footer from '../Pages/Footer.jsx';
-import BookingForm from './bookingForm';
+import "../CSS/Offers.css";
+import Mykonos from "../Images/Mykonos.jpg";
+import Rome from "../Images/romee.jpg";
+import Bali from "../Images/Bali.jpg";
+import Monaco from "../Images/MONACOO.jpg";
+import Egypt from "../Images/egyypt.jpg";
+import Couple from "../Images/girl.jpg";
+import { BsCurrencyEuro } from "react-icons/bs";
+import Footer from "../Pages/Footer.jsx";
+import BookingForm from "./bookingForm";
+import NewYork from "../Images/newyorkk.jpg";
+
+const offerData = [
+  {
+    id: 1,
+    imageUrl: NewYork,
+    title: "Prishtine - NewYork",
+    description:
+      " Explore the iconic landmarks, vibrant neighborhoods, and endless possibilities of the city that never sleeps.",
+    price: "1010",
+    duration: "5 days",
+    linkTo: "/newYork",
+    bookingLink: "/bookingForm",
+  },
+  {
+    id: 2,
+    imageUrl: Mykonos,
+    title: "Prishtine - Mykonos",
+    description:
+      "  Escape to Mykonos and let the tranquility of the Greek Isles envelop your senses.Travel to Mykonos now!",
+    price: "899",
+    duration: "6 days",
+    linkTo: "/mykonos",
+    bookingLink: "/bookingForm",
+  },
+  {
+    id: 3,
+    imageUrl: Rome,
+    title: "Prishtine - Rome",
+    description:
+      "Let the charm of Rome captivate your heart, and immerse yourself in a journey of history, culture and pure enchantment.",
+    price: "659",
+    duration: "5 days",
+    bookingLink: "/bookingForm",
+  },
+  {
+    id: 4,
+    imageUrl: Bali,
+    title: "Prishtine - Bali",
+    description:
+      "Let Balis healing energy rejuvenate your body and soul.Indulge in relaxation with world-class spas and wellness retreats. ",
+    price: "449",
+    duration: "3 days",
+    bookingLink: "/bookingForm",
+  },
+  {
+    id: 5,
+    imageUrl: Monaco,
+    title: "Prishtine - Monaco ",
+    description:
+      " Feel the thrill of the iconic Monte Carlo Casino, where elegance meets chance in grand style. ",
+    price: "789",
+    duration: "4 days",
+    bookingLink: "/bookingForm",
+  },
+  {
+    id: 6,
+    imageUrl: Egypt,
+    title: "Prishtine - Egypt ",
+    description:
+      " From the majestic Pyramids to the timeless Nile River, this land of pharaohs invites you on an unforgettable odyssey. ",
+    price: "1229",
+    duration: "7 days",
+    bookingLink: "/bookingForm",
+  },
+  // Add more offer data objects as needed
+];
 
 function Offers() {
-    return (
-     <>
-        <Header />
-        <div className="content">
-            <div>
-            <img src={Couple} className="coupleImg" alt="couple-img" />
-            <h1 className="offers-text">Offers</h1>
-            </div>
-          
+  const createCard = (offer) => (
+    <div key={offer.id} className="offers-column">
+      <div className="offers-card">
+        <Link to={offer.linkTo || "#"}>
+          <img src={offer.imageUrl} alt={offer.title} className="offers-img" />
+        </Link>
         <div className="container">
-            <div className="mainClass">
-            <div className="row">
-                <div className="offers-column">
-                    <div className="offers-card">
-                        <Link to = "/NewYork"> <img src={NewYork} alt="NewYork" className="offers-img"/></Link> 
-                        <div className="container">
-                            <Link to = "/NewYork"><h2 className="bottom-left linkClass">Prishtine - NewYork</h2></Link>
-                            <p> 
-                            Explore the iconic landmarks, vibrant neighborhoods, and endless possibilities of the city that never sleeps. 
-                            From Broadway's magic to the Statue of Liberty's embrace, 
-                            New York beckons with unforgettable experiences.
-                            Your adventure begins here!
-                            
-                            </p>
-                            <br />
-                            <p className="title">1010<BsCurrencyEuro/> 5 days</p>
-                       
-                            <Link to = "/bookingForm" id="offers-button">Book now</Link> 
-                            <br></br>
-                            <span><br></br></span>
-                        </div>
-                    </div>
-                </div>
-                <div className="offers-column">
-                    <div className="offers-card">
-                    <Link to = "/Mykonos"> <img src={Mykonos} alt="Mykonos" className="offers-img"/></Link>
-                        <div className="container">
-                        <Link to = "/Mykonos"><h2 className="bottom-left linkClass">Prishtine - Mykonos</h2></Link>
-                            <p> 
-                            Escape to Mykonos and let the tranquility of the Greek Isles envelop your senses.
-                             Discover a world where time slows down, and the essence of life's true beauty comes to life. 
-                            Your journey to the heart of Mykonos awaits, where dreams are woven into reality.
-                            </p>
-                            <br />
-                            <p className="title">899<BsCurrencyEuro/>  6 days</p>
-                       
-                            <Link to = "/bookingForm" id="offers-button">Book now</Link> 
-                            <br></br>
-                            <span><br></br></span>
-                        </div>
-                    </div>
-                </div>
-                <div className="offers-column">
-                    <div className="offers-card">
-                    <Link to = "/Rome"> <img src={Rome} alt="Rome" className="offers-img"/></Link>
-                        <div className="container">
-                        <Link to = "/Rome"><h2 className="bottom-left linkClass">Prishtine - Rome</h2></Link>
-                            <p> 
-                            Let the charm of Rome captivate your heart, and immerse yourself in a journey of history, culture
-                             and pure enchantment. Your adventure awaits in the Eternal City, 
-                            where every step leads to a new chapter in the story of Rome. 
-                            Your unforgettable Roman adventure awaits!
-                            </p>
-                            <br />
-                            <p className="title">659<BsCurrencyEuro/>  5 days</p>
-                       
-                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
-                            <br></br>
-                            <span><br></br></span> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="row">
-                <div className="offers-column">
-                    <div className="offers-card">
-                        <img src={Bali} alt="Bali" className="offers-img"/>
-                        <div className="container">
-                            <h2 className="bottom-left">Prishtine - Bali</h2>
-                            <p> 
-                            Escape to an island paradise where beauty knows no bounds.
-                             Bali awaits with its sun-kissed beaches, emerald rice terraces, and warm hospitality.
-                             Indulge in relaxation with world-class spas and wellness retreats. 
-                             Let Bali's healing energy rejuvenate your body and soul.
-                            </p>
-                            <br />
-                            <p className="title">2599<BsCurrencyEuro/> 10 days</p>
-                       
-                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
-                            <br></br>
-                            <span><br></br></span>
-                        </div>
-                    </div>
-                </div>
-                <div className="offers-column">
-                    <div className="offers-card">
-                        <img src={Monaco} alt="Monaco" className="offers-img"/>
-                        <div className="container">
-                            <h2 className="bottom-left">Prishtine - Monaco</h2>
-                            <p> 
-                            Feel the thrill of the iconic Monte Carlo Casino, where elegance meets chance in grand style.
-                             Explore the winding streets of Monaco-Ville, where history and tradition blend seamlessly.
-                             Experience the splendor of this chic and captivating destination.
-                             Monaco, where dreams come to life!
-                            </p>
-                            <br />
-                            <p className="title">505<BsCurrencyEuro/> 4 days</p>
-                       
-                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
-                            <br></br>
-                            <span><br></br></span>
-                        </div>
-                    </div>
-                </div>
-                <div className="offers-column">
-                    <div className="offers-card">
-                        <img src={Egypt} alt="Egypt" className="offers-img"/>
-                        <div className="container">
-                            <h2 className="bottom-left">Prishtine - Egypt</h2>
-                            <p> 
-                            Unravel the mysteries of ancient wonders in Egypt, a land steeped in history and awe-inspiring marvels.
-                             From the majestic Pyramids to the timeless Nile River,
-                             this land of pharaohs invites you on an unforgettable odyssey.
-                             Egypt, where the past and present coexist in harmony.
-                            </p>
-                            <br />
-                            <p className="title">999<BsCurrencyEuro/> 7 days</p>
-                       
-                            <Link to = "/bookingForm" id="offers-button">Book now</Link>
-                            <br></br>
-                            <span><br></br></span> 
-                        </div>
-                    </div>
-                </div>
-            </div>
-            </div>
+          <Link to={offer.linkTo || "#"}>
+            <h2 className="bottom-left linkClass">{offer.title}</h2>
+          </Link>
+          <p>{offer.description}</p>
+          <br />
+          <p className="title">
+            {offer.price}
+            <BsCurrencyEuro /> {offer.duration}
+          </p>
+          {offer.bookingLink && (
+            <Link to={offer.bookingLink} id="offers-button">
+              Book now
+            </Link>
+          )}
+          <br />
+          <span>
+            <br />
+          </span>
         </div>
-        </div>
-        <Footer/>
-     </>
+      </div>
+    </div>
+  );
 
-        
-    )
+  const createRow = (rowOffers) => (
+    <div className="row" key={rowOffers[0].id}>
+      {rowOffers.map((offer) => createCard(offer))}
+    </div>
+  );
+
+  const chunkedOffers = [];
+  for (let i = 0; i < offerData.length; i += 3) {
+    chunkedOffers.push(offerData.slice(i, i + 3));
+  }
+
+  return (
+    <>
+      <Header />
+      <div className="content">
+        <div>
+          <img src={Couple} className="coupleImg" alt="couple-img" />
+          <h1 className="offers-text">Offers</h1>
+        </div>
+
+        <div className="container">
+          <div className="mainClass">
+            {chunkedOffers.map((rowOffers) => createRow(rowOffers))}
+          </div>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
 
-export default Offers
+export default Offers;
