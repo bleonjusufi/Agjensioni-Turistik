@@ -15,7 +15,7 @@ import Dashboard from './Components/Dashboard'
 import Payment from './Components/Pages/Payment';
 import UsersList from './Components/dashPages/userList/usersList';
 import Employees from './Components/dashPages/Employees/employees';
-import AddEmployee from './Components/dashPages/Employees/AddEmployee';
+import AddEmployee from './Components/dashPages/Employees/addEmployee';
 import UpdateEmployee from './Components/dashPages/Employees/updateEmployee';
 import DeleteEmployee from './Components/dashPages/Employees/deleteEmployee';
 import OffersManagement from './Components/dashPages/Offers/offersManagement';
